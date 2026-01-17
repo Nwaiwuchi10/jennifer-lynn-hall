@@ -1,10 +1,11 @@
+import { PhoneNumber } from "../PhoneNumber";
 import "./style.css";
 const ClientService = () => {
   return (
     <div className="client-section">
       <h1>My Story andServices</h1>
       <p>Vince Pravata - Registered Client Service Associate</p>
-      <p>Phone: +19035196975</p>
+      <p>Phone: {PhoneNumber}</p>
 
       <p>Email:jenniferlynnhall65@gmail.com</p>
     </div>

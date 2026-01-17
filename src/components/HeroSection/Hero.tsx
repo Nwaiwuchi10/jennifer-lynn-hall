@@ -5,10 +5,11 @@ import img2 from "../../assets/jennifer.jpeg";
 import img3 from "../../assets/jen.jpeg";
 import { FaEnvelope } from "react-icons/fa";
 import whatsapp from "../../assets/whatsapp.png";
+import { PhoneNumber } from "../PhoneNumber";
 const images = [img1, img2, img3];
 
 const HeroSection: React.FC = () => {
-  const phoneNumber = "+19035196975";
+  const phoneNumber = PhoneNumber;
   const WhatsappClick = () => {
     const url = `https://wa.me/${phoneNumber}`;
     window.open(url, "_blank");
@@ -50,7 +51,7 @@ const HeroSection: React.FC = () => {
         </p>
         <p>
           <span>Direct:</span>
-          <span>(+19035196975) </span>
+          <span>({PhoneNumber}) </span>
         </p>
 
         <button onClick={WhatsappClick}>Get Started</button>

@@ -1,6 +1,7 @@
+import { PhoneNumber } from "../PhoneNumber";
 import "./BrokerDetails.css";
 const BrokerDetails = () => {
-  const phoneNumber = "+19035196975";
+  const phoneNumber = PhoneNumber;
   const WhatsappClick = () => {
     const url = `https://wa.me/${phoneNumber}`;
     window.open(url, "_blank");

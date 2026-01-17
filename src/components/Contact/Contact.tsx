@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Contact.css";
+import { PhoneNumber } from "../PhoneNumber";
 
 interface FormData {
   firstName: string;
@@ -31,7 +32,7 @@ const ContactMe: React.FC = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    const whatsappNumber = "+19035196975"; // No '+' for wa.me links
+    const whatsappNumber = PhoneNumber; // No '+' for wa.me links
     const textMessage = `Hello, I am ${formData.firstName} ${formData.lastName}. My email is ${formData.email}, and my phone number is ${formData.phoneNumber}. I would like to talk about ${formData.topic}. Here's my message: ${formData.message}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
